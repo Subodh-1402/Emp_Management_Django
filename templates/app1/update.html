@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h1> UPDATE INFO HERE </h1>
+
+	<form method="POST"> 
+		{%csrf_token%}
+
+		Name: <input type="text" name='eName' value="{{employee.eName}}"><br>
+
+
+		ID: <input style="text" name='eID' value="{{employee.eID}}"><br>
+
+
+		Designation: <input style="text" name='eDesignation' value="{{employee.eDesignation}}"><br>
+
+
+		JoiningDate: <input style="text" name='eJoiningDate' value="{{employee.eJoiningDate}}"><br>
+
+
+		Department: <input style="text" name='eDepartment' value="{{employee.eDepartment}}"><br>
+
+
+		Salary: <input style="text" name='eSalary' value="{{employee.eSalary}}"><br>
+
+
+		Experience: <input style="text" name='eExperience' value="{{employee.eExperience}}"><br>
+
+
+		<button>Update</button>
+		
+	</form>
+
+</body>
+</html>

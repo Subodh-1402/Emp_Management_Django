@@ -1,0 +1,17 @@
+{%extends "app1/home.html"%}
+
+{%block body_block%}
+
+<center>
+<form method ="POST">
+	{{form.as_p}}
+	{%csrf_token%}
+
+	<button type="submit">Login</button>
+</form>
+
+</center>
+
+
+
+{%endblock%}

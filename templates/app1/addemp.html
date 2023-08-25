@@ -1,0 +1,15 @@
+{%extends "app1/home.html"%}
+
+{%block body_block%}
+
+<div class="container" align="center">
+
+<h2>EMPLOYEE FORM</h2>
+
+<form method="post"> 
+		{{form.as_p}} 
+		{%csrf_token%}
+		<input type="submit" class="btn btn-primary" value="submit"> 
+	</form>
+
+{%endblock%}

@@ -1,0 +1,15 @@
+{%extends "app1/home.html"%}
+
+{%block body_block%}
+
+<center>
+<h2>ADD HOLIDAYS</h2>
+
+<form method="POST"> 
+		{{form.as_p}} 
+		{%csrf_token%} 
+		<a href="/holiday"><input type="submit" class="btn btn-primary" value="submit"></a>
+
+
+</center>
+{%endblock%}
